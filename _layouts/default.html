@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="/assets/main.css" />
     <meta name="google-site-verification" content="dDjWKZ81NV_RuvaCfvcBNjK_TBVBWEe8UfgiNoh3cWk" />
   </head>
-  <body>
+  <body class="{{page.type}}">
     <div class="bg"></div>
+    <div class="landing-page-wrapper">
+      <div class="landing-page-container">
+        <h1>Just link it,<br class="display-mobile"> we test it,<br class="display-mobile"> we build it too!</h1>
+        <p class="webhook">Just create a webhook to:<br class="display-mobile"> 
+        http://ci.frigg.io/webhooks/github/</p>
+        <a href="http://ci.frigg.io">Login at ci.frigg.io</a>
+        •
+        <a href="/docs/">Documentation</a>
+      </div>
+    </div>
     {{content}}
   </body>
 </html>

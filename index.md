@@ -38,26 +38,26 @@ Example badge for frigg/frigg [![Build status](https://ci.frigg.io/badges/frigg/
 To get a nice build badge in your readme to show everyone that you build is a success, or warn people that it is broken and the master branch might not work at the moment, just add the code below.
 
 #### Markdown
-{% highlight markdown %}
+```markdown
 [![Build status](https://ci.frigg.io/badges/<owner>/<repo>/)](https://ci.frigg.io/<owner>/<repo>/last/)
-{% endhighlight %}
+```
 
 #### reStructuredText
-{% highlight rst %}
+```rst
 .. image:: https://ci.frigg.io/badges/<owner>/<repo>/
      :target: https://ci.frigg.io/<owner>/<repo>/last/
      :alt: Build Status
-{% endhighlight %}
+```
 
 #### RDoc
-{% highlight rdoc %}
+```rdoc
 {<img src="https://ci.frigg.io/badges/<owner>/<repo>/" alt="Build Status" />}[https://ci.frigg.io/<owner>/<repo>/last/]
-{% endhighlight %}
+```
 
 #### HTML
-{% highlight html %}
+```html
 <a href="https://ci.frigg.io/<owner>/<repo>/last/"><img src="https://ci.frigg.io/badges/<owner>/<repo>/" alt="Build Status" /></a>
-{% endhighlight %}
+```
 
 ## Approval
 Since frigg is in a beta phase all projects need approval before they can be

@@ -20,6 +20,10 @@ body {
   left: 0;
   z-index: -1;
 }
+ul.unstyled,
+ol.unstyled {
+  list-style-type: none;
+}
 
 .landing-page-wrapper {
   width: 100%;
@@ -48,6 +52,35 @@ body {
 .docs-content {
   background: #fafafa;
   padding: 2em;
+  h3 img {
+    vertical-align: bottom;
+  }
+}
+
+.post-title {
+  margin-bottom: 0;
+  font-weight: 200;
+  .category{
+    color: grey;
+    font-weight: 100;
+  }
+}
+
+.post-meta {
+  color: silver;
+  font-size: 0.9em;
+  font-weight: 100;
+  margin-top: 0;
+  a {
+    color: silver;
+  }
+}
+.post-content{
+  font-weight: 200;
+  font-size: 1.2em;
+  strong {
+    font-weight: 300;
+  }
 }
 
 @media screen and (min-width: 580px) {
@@ -58,7 +91,7 @@ body {
       position: absolute;
     }
   }
-  .docs-content{
+  .content-wrapper{
     position: absolute;
     top: 0;
     right: 0;

@@ -1,1 +1,10 @@
 title: Frigg Continous Integration
+baseurl: ""
+url: "http://frigg.io"
+twitter_username: frigg_io
+github_username:  frigg
+
+markdown: kramdown
+timezone: Europa/Oslo
+encoding: utf-8
+permalink: /blog/:categories/:title/

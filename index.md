@@ -20,7 +20,7 @@ Should be defined as a list of urls where frigg can post status about the
 build.
 
 #### `coverage` - optional
-This option activates coverage reporting for the project. It needs two subparameter `path` and `parser`. The `path` option is the path to the coverage report file and the `parser` is the type of parser needed to parse the report file. Currentlyt available parsers: clover, cobertura and python. More information can be found in the [coverage reporting documentation](/coverage-reporting).
+This option activates coverage reporting for the project. It needs two subparameter `path` and `parser`. The `path` option is the path to the coverage report file and the `parser` is the type of parser needed to parse the report file. Currentlyt available parsers: clover, cobertura and python. More information can be found in the [coverage reporting documentation](/coverage-reporting/).
 
 ### Example
 {% highlight yaml %}

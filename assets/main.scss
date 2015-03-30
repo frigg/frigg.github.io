@@ -83,6 +83,20 @@ ol.unstyled {
   }
 }
 
+.btn{
+  background: #fafafa;
+  padding: 0.8em;
+  margin: 1em;
+  border: 2px solid #fafafa;
+  display: inline-block;
+
+  &:hover{
+    background: #eaeaea;
+    border-color: #eaeaea;
+    border-bottom: 2px solid #999;
+  }
+}
+
 @media screen and (min-width: 580px) {
   .display-mobile { display: none; }
   .docs {

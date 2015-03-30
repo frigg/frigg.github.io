@@ -26,10 +26,11 @@ ol.unstyled {
 }
 
 .landing-page-wrapper {
+  margin-top: 20%;
   width: 100%;
   padding: 1em 0;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 0;
   background: rgba(240, 240, 240, 0.5);
   text-align: center;
 
@@ -43,13 +44,13 @@ ol.unstyled {
     color: #3c5b51;
   }
 }
-
-.docs {
-  .landing-page-wrapper {
-    position: relative;
-  }
+.content-wrapper{
+  width: 100%;
 }
+
 .docs-content {
+  margin: 0 auto;
+  max-width: 1000px;
   background: #fafafa;
   padding: 2em;
   h3 img {
@@ -99,19 +100,6 @@ ol.unstyled {
 
 @media screen and (min-width: 580px) {
   .display-mobile { display: none; }
-  .docs {
-    .landing-page-wrapper {
-      width: 50%;
-      position: absolute;
-    }
-  }
-  .content-wrapper{
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-height: 100%;
-    width: 50%;
-  }
 }
 
 @media screen and (max-width: 1499px) {

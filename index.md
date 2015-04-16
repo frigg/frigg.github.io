@@ -33,6 +33,9 @@ tasks:
  - flake8
  - coverage xml
 
+services:
+ - postgresql
+
 coverage:
   path: coverage.xml
   parser: python

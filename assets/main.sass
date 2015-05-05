@@ -1,0 +1,144 @@
+---
+# These lines makes jekyll compile it
+---
+
+$gray: #333
+$color-btn: #778899
+$footer-height: 200px
+$color-footer-background: $color-btn
+
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+html
+  height: 100%
+
+body
+  font-family: Raleway, sans-serif
+  font-size: 17px
+  height: 100%
+  padding: 0
+  margin: 0
+  overflow-x: hidden
+
+a
+  color: $color-btn
+
+.outer-wrapper
+  min-height: 100%
+
+  &:after
+    content: ""
+    display: block
+    height: $footer-height
+
+.content-wrapper
+  width: 90%
+  margin: 3em auto
+  padding-top: 3em
+
+  h1
+    width: 120%
+    margin-left: -10%
+    padding-left: 10%
+    padding-bottom: .2em
+    font-size: 1.4em
+    font-weight: 200
+    border-bottom: 1px solid $gray
+
+    a
+      color: black
+      text-decoration: none
+
+.footer
+  height: $footer-height / 2
+  padding-top: $footer-height / 2
+  background-color: $color-footer-background
+  text-align: center
+
+  a
+    padding: 0.2em
+    color: #fafafa
+    font-weight: 100
+    border: 1px solid #fafafa
+    text-decoration: none
+    display: inline-block
+    transition: color 0.4s ease-in-out
+    transition: background-color 0.4s ease-in-out
+
+    &:hover
+      background-color: #fafafa
+      color: $color-footer-background
+      transition: all 0.6s ease-in-out
+
+.landing-page
+
+  h2
+    font-weight: 200
+
+.landing-page-buttons
+  margin-top: 8em
+
+.news
+  ul
+    padding: 0
+    margin: 0
+    list-style-type: none
+
+  li
+    font-size: 20px
+    font-weight: 100
+    float: none
+    clear: both
+    display: block
+    height: 2em
+    line-height: 2.2em
+    border-bottom: 1px solid lighten($gray, 50%)
+
+    a
+      color: black
+      text-decoration: none
+
+    &:hover
+      font-weight: 300
+      background: lighten($gray, 80%)
+
+.news-post
+  max-width: 800px
+  font-size: 1.1em
+
+  .post-title
+    margin-bottom: 0.2em
+
+    .category
+      color: $color-btn
+      font-weight: 100
+
+.btn
+  border: 3px solid $color-btn
+  padding: 0.4em
+  margin: 0.1em
+  font-size: 1.4em
+  text-decoration: none
+  color: $color-btn
+  font-weight: 100
+  display: inline-block
+  transition: color 0.4s ease-in-out
+  transition: border-color 0.4s ease-in-out
+  transition: background-color 0.4s ease-in-out
+
+  &:hover
+    color: darken($color-btn, 10%)
+    border-color: darken($color-btn, 10%)
+    background-color: lighten($color-btn, 30%)
+    transition: all 0.4s ease-in-out
+
+@media screen and (min-width: 600px)
+  .content-wrapper
+    padding-top: 15em
+
+    h1
+      font-size: 2.4em

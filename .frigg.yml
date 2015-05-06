@@ -1,0 +1,3 @@
+tasks:
+ - gem install rouge
+ - jekyll build

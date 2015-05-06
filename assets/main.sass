@@ -4,14 +4,32 @@
 
 $gray: #333
 $color-btn: #778899
-$footer-height: 200px
-$color-footer-background: $color-btn
+$footer-height: 12em
+$color-inverted-background: $color-btn
+$color-inverted-text: #fafafa
+
+.bg
+  position: absolute
+  top: 0
+  left: 0
+  background-size: cover
+  background-position: center
+  width: 100%
+  height: 100%
+  z-index: -1
 
 .pull-left
   float: left
 
 .pull-right
   float: right
+
+.inverted
+  background-color: $color-inverted-background
+  color: $color-inverted-text
+
+  a
+    color: $color-inverted-text
 
 html
   height: 100%
@@ -35,10 +53,24 @@ a
     display: block
     #height: $footer-height
 
+.header
+  padding: 0.5em
+  font-size: 1.8em
+  font-weight: 100
+
+  a
+    text-decoration: none
+
+  .btn
+    padding: 0.2em
+    margin: 0
+    font-size: 0.8em
+    border: 1px solid $color-inverted-text
+
 .content-wrapper
-  width: 90%
-  margin: 3em auto
-  padding-top: 3em
+  header
+    font-size: 2em
+    font-weight: 200
 
   h1
     width: 120%
@@ -54,50 +86,85 @@ a
       text-decoration: none
 
 .footer
+  font-size: 1.5em
   height: ($footer-height / 3) * 2
   padding-top: $footer-height / 3
-  background-color: $color-footer-background
   text-align: center
 
   .links
     a
       padding: 0.2em
-      color: #fafafa
       font-weight: 100
-      border: 1px solid #fafafa
+      border: 1px solid $color-inverted-text
       text-decoration: none
       display: inline-block
       transition: color 0.4s ease-in-out
       transition: background-color 0.4s ease-in-out
 
       &:hover
-        background-color: #fafafa
-        color: $color-footer-background
+        background-color: $color-inverted-text
+        color: $color-inverted-background
         transition: all 0.6s ease-in-out
 
   .icon-links
     margin-top: 1em
+
     a
       color: #fafafa
       font-size: 2em
-
-header
-  font-size: 2em
-  font-weight: 200
+      margin: 0 0.2em
 
 h1, h2, h3, h4, h5
   font-weight: 200
   margin-bottom: 0.4em
 
 .landing-page
+  .bg
+    background-image: url(https://download.unsplash.com/photo-1419064642531-e575728395f2)
+
+  .content-wrapper
+    text-align: center
 
   h2
     font-weight: 200
 
-.landing-page-buttons
-  margin-top: 8em
+  .landing-page-buttons
+    margin-top: 16em
+
+  .features-wrapper
+    margin-top: 3em
+    padding: 5em 0 5em 0
+
+  .features
+    margin: 0 auto
+    text-align: center
+
+    .feature
+      width: 30%
+      display: inline-block
+
+      i
+        padding: 0.2em
+        font-size: 4em
+        display: block
+
+      strong
+        font-size: 1.2em
+        font-weight: 100
+        text-transform: uppercase
+
+  .section-x
+    min-height: 20em
+    text-align: justify
+    line-height: 1.8em
+    width: 80%
+    margin: 4em auto
 
 .docs
+  .docs-content
+    margin: 1em auto
+    line-height: 1.8em
+
   aside
     text-align: center
 
@@ -155,7 +222,7 @@ h1, h2, h3, h4, h5
       font-weight: 100
 
 .btn
-  border: 3px solid $color-btn
+  border: 2px solid $color-btn
   padding: 0.4em
   margin: 0.1em
   font-size: 1.4em
@@ -171,7 +238,7 @@ h1, h2, h3, h4, h5
     color: darken($color-btn, 10%)
     border-color: darken($color-btn, 10%)
     background-color: lighten($color-btn, 30%)
-    transition: all 0.4s ease-in-out
+    transition: all 0.4s ease-out
 
 
 pre
@@ -181,12 +248,18 @@ pre
 
 @media screen and (min-width: 600px)
   .content-wrapper
-    padding-top: 15em
-
     h1
       font-size: 2.4em
 
+  .feature
+    font-size: 1.5em
+
+
 @media screen and (min-width: 800px)
+  .container
+    max-width: 1000px
+    margin: 0 auto
+
   .docs
     .docs-content
       max-width: 1000px
@@ -203,11 +276,16 @@ pre
       width: 74%
       margin-left: 26%
 
-@media screen and (min-width: 800px)
-  .content-wrapper
-    width: 60%
 
-    h1
-      width: 140%
-      margin-left: -40%
-      padding-left: 40%
+@media screen and (min-width: 800px)
+  .landing-page
+    h2
+      margin-top: 4em
+      font-size: 3em
+
+    .features-wrapper
+      width: 100%
+      margin: 5em auto
+
+    .features
+      width: 60%

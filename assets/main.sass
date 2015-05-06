@@ -54,25 +54,32 @@ a
       text-decoration: none
 
 .footer
-  height: $footer-height / 2
-  padding-top: $footer-height / 2
+  height: ($footer-height / 3) * 2
+  padding-top: $footer-height / 3
   background-color: $color-footer-background
   text-align: center
 
-  a
-    padding: 0.2em
-    color: #fafafa
-    font-weight: 100
-    border: 1px solid #fafafa
-    text-decoration: none
-    display: inline-block
-    transition: color 0.4s ease-in-out
-    transition: background-color 0.4s ease-in-out
+  .links
+    a
+      padding: 0.2em
+      color: #fafafa
+      font-weight: 100
+      border: 1px solid #fafafa
+      text-decoration: none
+      display: inline-block
+      transition: color 0.4s ease-in-out
+      transition: background-color 0.4s ease-in-out
 
-    &:hover
-      background-color: #fafafa
-      color: $color-footer-background
-      transition: all 0.6s ease-in-out
+      &:hover
+        background-color: #fafafa
+        color: $color-footer-background
+        transition: all 0.6s ease-in-out
+
+  .icon-links
+    margin-top: 1em
+    a
+      color: #fafafa
+      font-size: 2em
 
 header
   font-size: 2em

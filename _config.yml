@@ -7,5 +7,6 @@ github_username:  frigg
 markdown: kramdown
 timezone: Europa/Oslo
 encoding: utf-8
+highlighter: rouge
 permalink: pretty
 permalink: /blog/:categories/:title/

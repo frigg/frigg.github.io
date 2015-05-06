@@ -33,7 +33,7 @@ a
   &:after
     content: ""
     display: block
-    height: $footer-height
+    #height: $footer-height
 
 .content-wrapper
   width: 90%
@@ -87,7 +87,7 @@ header
 
 h1, h2, h3, h4, h5
   font-weight: 200
-  margin-bottom: 0.6em
+  margin-bottom: 0.4em
 
 .landing-page
 
@@ -173,6 +173,12 @@ h1, h2, h3, h4, h5
     background-color: lighten($color-btn, 30%)
     transition: all 0.4s ease-in-out
 
+
+pre
+  padding: 0.8em
+  font-size: 0.8em
+  overflow-x: auto
+
 @media screen and (min-width: 600px)
   .content-wrapper
     padding-top: 15em
@@ -183,7 +189,7 @@ h1, h2, h3, h4, h5
 @media screen and (min-width: 800px)
   .docs
     .docs-content
-      max-width: 800px
+      max-width: 1000px
       float: none
       clear: both
 
@@ -196,3 +202,12 @@ h1, h2, h3, h4, h5
     header, article
       width: 74%
       margin-left: 26%
+
+@media screen and (min-width: 800px)
+  .content-wrapper
+    width: 60%
+
+    h1
+      width: 140%
+      margin-left: -40%
+      padding-left: 40%

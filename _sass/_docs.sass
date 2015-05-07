@@ -2,10 +2,11 @@
 
 .docs
   .docs-content
-    margin: 2em auto 1em auto
     line-height: 1.8em
 
   aside
+    margin-bottom: 1.2em
+    background: lighten($color-inverted-background, 40%)
     text-align: center
 
     ul
@@ -27,6 +28,10 @@
       font-weight: 300
       background: lighten($gray, 80%)
 
+  header, article
+    width: 90%
+    margin: 0 auto
+
   h3
     a
       margin-left: 0.5em
@@ -38,6 +43,7 @@
 @media screen and (min-width: 800px)
   .docs
     .docs-content
+      margin: 2em auto 1em auto
       max-width: 1000px
       float: none
       clear: both
@@ -47,6 +53,7 @@
       min-height: 100px
       text-align: left
       float: left
+      background-color: transparent
 
     header, article
       width: 74%

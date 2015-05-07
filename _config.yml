@@ -13,3 +13,7 @@ permalink: /blog/:categories/:title/
 
 safe: true
 lsi: false
+
+sass:
+  sass_dir: _sass
+  style: :compressed

@@ -1,0 +1,45 @@
+@import variables
+
+.docs
+  .docs-content
+    margin: 2em auto 1em auto
+    line-height: 1.8em
+
+  aside
+    text-align: center
+
+    ul
+      padding: 0
+      margin: 0
+      list-style-type: none
+
+    li
+      font-weight: 100
+      display: block
+      height: 2em
+      line-height: 2.2em
+      border-bottom: 1px solid lighten($gray, 50%)
+      
+    a
+      text-decoration: none
+
+    &:hover
+      font-weight: 300
+      background: lighten($gray, 80%)
+
+@media screen and (min-width: 800px)
+  .docs
+    .docs-content
+      max-width: 1000px
+      float: none
+      clear: both
+
+    aside
+      width: 20%
+      min-height: 100px
+      text-align: left
+      float: left
+
+    header, article
+      width: 74%
+      margin-left: 26%

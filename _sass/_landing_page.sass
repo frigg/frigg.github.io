@@ -1,0 +1,68 @@
+@import variables
+
+.landing-page
+
+  .content-wrapper
+    text-align: center
+
+  .jumbo
+    display: block
+    background-size: cover
+    background-position: center
+    background-image: url(https://download.unsplash.com/photo-1419064642531-e575728395f2)
+
+    h1
+      margin: 0
+      padding: 0
+
+  .landing-page-buttons
+    margin-top: 16em
+
+  .features-wrapper
+    margin: 0
+    padding: 5em 0 5em 0
+
+  .features
+    margin: 0 auto
+    text-align: center
+
+    .feature
+      width: 30%
+      display: inline-block
+
+      i
+        padding: 0.2em
+        font-size: 4em
+        display: block
+
+      strong
+        font-size: 1.2em
+        font-weight: 100
+        text-transform: uppercase
+        white-space: nowrap
+
+  .section-x
+    min-height: 20em
+    text-align: justify
+    line-height: 1.8em
+    width: 80%
+    margin: 4em auto
+
+@media screen and (min-width: 600px)
+  .feature
+    font-size: 1.5em
+
+
+@media screen and (min-width: 800px)
+  .landing-page
+    .jumbo
+      padding: 6em 0
+
+    h1
+      font-size: 3em
+
+    .features-wrapper
+      width: 100%
+
+    .features
+      width: 60%

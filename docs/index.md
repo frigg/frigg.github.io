@@ -4,7 +4,6 @@ title: Documentation
 ---
 
 {% include settings.md %}
-{% include badges.md %}
 
 ### Approval
 Since frigg is in a beta phase all projects need approval before they can be

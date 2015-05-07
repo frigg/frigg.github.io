@@ -1,3 +1,8 @@
+---
+layout: docs
+title: Badges
+---
+
 ## Badges
 
 ### Build badge [![Example badge for frigg/frigg](https://ci.frigg.io/frigg/frigg.svg)](https://ci.frigg.io/frigg/frigg/last/)

@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5
 
 .docs
   .docs-content
-    margin: 1em auto
+    margin: 2em auto 1em auto
     line-height: 1.8em
 
   aside
@@ -210,17 +210,21 @@ h1, h2, h3, h4, h5
       font-weight: 300
       background: lighten($gray, 80%)
 
-.news-post
-  max-width: 800px
-  font-size: 1.1em
-  line-height: 1.8em
+.news
+  .content-wrapper
+    margin-top: 2em
+    
+  .news-post
+    max-width: 800px
+    font-size: 1.1em
+    line-height: 1.8em
 
-  .post-title
-    margin-bottom: 0.2em
+    .post-title
+      margin-bottom: 0.2em
 
-    .category
-      color: $color-btn
-      font-weight: 100
+      .category
+        color: $color-btn
+        font-weight: 100
 
 .btn
   border: 2px solid $color-btn

@@ -9,7 +9,7 @@ In this example, Frigg will first build the maven project (and report it as a se
 The benefit of using setup tasks is to separate the building steps from tests (to make a more clean report).
 
 {% highlight yaml %}
-setup:
+setup_tasks:
   mvn -B build
 tasks:
   mvn -B test

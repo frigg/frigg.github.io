@@ -23,7 +23,9 @@ To get a nice build badge in your readme to show everyone that you build is a su
 
 #### HTML
 {% highlight html %}
-<a href="https://ci.frigg.io/<owner>/<repo>/last/"><img src="https://ci.frigg.io/<owner>/<repo>.svg" alt="Build Status" /></a>
+<a href="https://ci.frigg.io/<owner>/<repo>/last/">
+  <img src="https://ci.frigg.io/<owner>/<repo>.svg" alt="Build Status" />
+</a>
 {% endhighlight %}
 
 
@@ -47,5 +49,7 @@ To get a nice build badge in your readme to show everyone that you build is a su
 
 #### HTML
 {% highlight html %}
-<a href="https://ci.frigg.io/coverage/<owner>/<repo>/last/"><img src="https://ci.frigg.io/<owner>/<repo>.svg" alt="Build Status" /></a>
+<a href="https://ci.frigg.io/coverage/<owner>/<repo>/last/">
+  <img src="https://ci.frigg.io/<owner>/<repo>.svg" alt="Build Status" />
+</a>
 {% endhighlight %}

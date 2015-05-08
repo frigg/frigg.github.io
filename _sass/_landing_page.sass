@@ -14,9 +14,20 @@
     h1
       margin: 0
       padding: 0
+      font-weight: 300
 
   .landing-page-buttons
     margin-top: 10em
+
+    .btn
+      color: black
+      background: rgba(250, 250, 250, 0.4)
+
+      &:hover
+        color: darken($color-btn, 10%)
+        border-color: darken($color-btn, 10%)
+        background-color: lighten($color-btn, 30%)
+        transition: all 0.4s ease-out
 
   .features-wrapper
     margin: 0
@@ -35,8 +46,7 @@
         font-size: 4em
         display: block
 
-      strong
-        font-weight: 100
+      .tagline
         text-transform: uppercase
         white-space: nowrap
 

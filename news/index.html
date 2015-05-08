@@ -5,13 +5,5 @@ type: news
 ---
 
 <div class="news container">
-  <h3>Latest news:</h3>
-  <ul class="unstyled list-posts">
-    {% for post in site.posts %}
-    <li>
-      <a href="{{post.url}}" class="title pull-left">{{post.title}}</a>
-      <span class="date pull-right">{{post.date|date: "%d.%m.%Y"}}</span>
-    </li>
-    {% endfor %}
-  </ul>
+  {% include latest_news.html %}
 </div>

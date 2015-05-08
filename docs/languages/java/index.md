@@ -35,8 +35,15 @@ tasks:
 Frigg also support reporting test coverage with Maven by using cobertura,
 this will run mvn test and generate a coverage report which will be visualized on frigg.io.
 
+For more information on coverage, see (Frigg Coverage)[/docs/coverage-reporting/].
+
 #### .frigg.yml with coverage
 {% highlight yaml %}
 tasks:
  - mvn -B cobertura:cobertura
+
+coverage:
+  path: target/site/cobertura/coverage.xml
+  parser: cobertura
+
 {% endhighlight %}

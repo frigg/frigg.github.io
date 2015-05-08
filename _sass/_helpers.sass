@@ -12,6 +12,12 @@
   clear: both
   float: none !important
 
+.min-600
+  display: none
+
+.max-600
+  display: inline-block
+
 .inverted
   background-color: $color-inverted-background
   color: $color-inverted-text
@@ -36,3 +42,10 @@
     border-color: darken($color-btn, 10%)
     background-color: lighten($color-btn, 30%)
     transition: all 0.4s ease-out
+
+@media screen and (min-width: 600px)
+  .min-600
+    display: inline-block
+
+  .max-600
+    display: none

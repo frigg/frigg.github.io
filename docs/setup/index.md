@@ -10,7 +10,7 @@ The benefit of using setup tasks is to separate the building steps from tests (t
 
 {% highlight yaml %}
 setup_tasks:
-  mvn -B build
+  mvn -B compile
 tasks:
   mvn -B test
 {% endhighlight %}

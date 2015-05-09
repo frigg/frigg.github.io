@@ -3,10 +3,11 @@ layout: docs
 title: Documentation
 ---
 
-{% include settings.md %}
+### Getting started
+`TODO`
 
 ### Approval
-Since frigg is in a beta phase all projects need approval before they can be
+Since Frigg is in a beta phase all projects need approval before they can be
 built on. If you think it is taking way to long before your project is
 approved you can send us a mail at hi@frigg.io.
 

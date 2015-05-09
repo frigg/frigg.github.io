@@ -9,7 +9,7 @@ in your java projects.
 ## Java installation
 The default java installation in the Frigg Container is Java 8.
 However, you may manually install another java version by adding
-install steps in the setup step (ref setup step TODO).
+installation steps as [setup_tasks](/docs/configuration/#setuptasks---optional).
 
 ## Build Using Maven
 Maven can manage a project's build, reporting and documentation from
@@ -26,7 +26,8 @@ continuous integration environment. When running in non-interactive mode,
 Maven will never stop to accept input from the user. Instead, it will
 use sensible default values when it requires input.
 
-For more command line options see [Maven Command Line Options](http://books.sonatype.com/mvnref-book/reference/running-sect-options.html)
+For more command line options see
+[Maven Command Line Options](http://books.sonatype.com/mvnref-book/reference/running-sect-options.html)
 
 #### Simple .frigg.yml
 {% highlight yaml %}

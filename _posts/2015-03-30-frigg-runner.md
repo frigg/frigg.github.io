@@ -8,7 +8,7 @@ slug: frigg-runner
 
 Frigg knows which tasks a project needs done in order to check the status of the
 project. It can be everything from running tests to running linters. Frigg gets
-the tasks either from the frigg settings file or by guessing based on the files
+the tasks either from the Frigg settings file or by guessing based on the files
 in the project. We thought that it would be great to have a easy way of running
 all tasks locally. As a result we created
 [frigg-runner](https://github.com/frigg/frigg-runner), which uses the same task

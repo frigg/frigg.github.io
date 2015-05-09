@@ -10,8 +10,8 @@ in your python projects.
 Tox is a great way to handle testing of several python versions
 and several versions of your other dependencies. Define your tox
 settings in tox.ini and list your different test environments with
-`tox -l`. Each line in that output can be run specifically with 
-`tox -e <env>`. If you define a frigg task for each of those environments
+`tox -l`. Each line in that output can be run specifically with
+`tox -e <env>`. If you define a Frigg task for each of those environments
 it will be easy to find errors on different versions when building
 on frigg. Below you will find an example on a tox environment list
 and the .frigg.yml to define them as separate tasks.

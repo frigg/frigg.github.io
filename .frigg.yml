@@ -1,3 +1,5 @@
-tasks:
+setup_tasks:
  - gem install rouge rake html-proofer
+
+tasks:
  - rake test

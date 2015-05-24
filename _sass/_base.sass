@@ -1,0 +1,100 @@
+
+html
+  height: 100%
+
+body
+  font-family: Lato, sans-serif
+  font-weight: 300
+  font-size: 17px
+  height: 100%
+  padding: 0
+  margin: 0
+  overflow-x: hidden
+
+a
+  color: $color-btn
+
+.outer-wrapper
+  min-height: 100%
+
+  &:after
+    content: ""
+    display: block
+    #height: $footer-height
+
+.header
+  padding: 0.5em
+  font-size: 1.8em
+
+  a
+    text-decoration: none
+
+  .btn
+    padding: 0.2em
+    margin: 0.2em
+    font-size: 0.6em
+    border: 1px solid $color-inverted-text
+    text-transform: uppercase
+
+.content-wrapper
+  header
+    font-size: 2em
+
+.footer
+  font-size: 1.5em
+  height: ($footer-height / 4) * 3
+  padding-top: $footer-height / 4
+  text-align: center
+
+  .links
+    a
+      margin: 0.2em
+      padding: 0.2em
+      border: 1px solid $color-inverted-text
+      text-decoration: none
+      display: inline-block
+      transition: color 0.4s ease-in-out
+      transition: background-color 0.4s ease-in-out
+
+      &:hover
+        background-color: $color-inverted-text
+        color: $color-inverted-background
+        transition: all 0.6s ease-in-out
+
+  .icon-links
+    margin-top: 1em
+
+    a
+      color: #fafafa
+      font-size: 2em
+      margin: 0 0.2em
+
+h1, h2, h3, h4, h5
+  font-weight: 300
+  margin-bottom: 0.4em
+
+h4
+  font-weight: 300
+
+p
+  margin-top: 0.2em
+  margin-bottom: 0.8em
+
+pre
+  padding: 0.8em
+  font-size: 0.8em
+  overflow-x: auto
+
+@media screen and (min-width: 600px)
+  .content-wrapper
+    h1
+      font-size: 2.4em
+
+  .feature
+    font-size: 1.5em
+
+
+@media screen and (min-width: 800px)
+  .container
+    max-width: 1000px
+    margin: 0 auto

@@ -4,6 +4,7 @@ type: docs
 ---
 
 <div class="docs-content">
-  <h1>{{page.title}}</h1>
-  {{content}}
+  <aside>{% include docs_toc.html %}</aside>
+  <header>{{page.title}}</header>
+  <article>{{content}}</article>
 </div>

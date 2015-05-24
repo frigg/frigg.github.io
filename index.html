@@ -1,0 +1,53 @@
+---
+layout: default
+title: Frigg Continous Integration
+type: landing-page
+---
+
+<div class="jumbo">
+  <h1>Build your projects with ease</h1>
+  <p class="webhook"><!--Just create a webhook to:<br class="display-mobile"> http://ci.frigg.io/webhooks/github/--></p>
+
+  <div class="landing-page-buttons">
+    <a href="https://ci.frigg.io" class="btn">View your builds at ci.frigg.io</a>
+    <a href="/docs/" class="btn">Documentation</a>
+  </div>
+</div>
+<div class="features-wrapper inverted">
+  <div class="features">
+    <div class="feature">
+      <i class="fa fa-code"></i>
+      <div class="tagline">Write code</div>
+    </div>
+
+    <div class="feature">
+      <i class="fa fa-git"></i>
+      <div class="tagline">Push it</div>
+    </div>
+
+    <div class="feature">
+      <i class="fa fa-rocket"></i>
+      <div class="tagline">We build it</div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="section-x">
+    <div class="column">
+      <h3>How to set it up</h3>
+      <p>
+        In order to start to use Frigg just add the url below in a webhook
+        on github and check of "<em>Send me everything</em>". Frigg will then
+        build on every push and marks pull-requests with status.
+      </p>
+      <div class="highlight">
+        <pre><code>https://ci.frigg.io/webhooks/github/</code></pre>
+      </div>
+    </div>
+
+    <div class="column news">
+      {% include latest_news.html %}
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>

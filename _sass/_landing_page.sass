@@ -1,0 +1,135 @@
+@import variables
+
+.landing-page
+
+  .content-wrapper
+    text-align: center
+
+  .jumbo
+    padding: 3em 0
+    display: block
+    background-size: cover
+    background-position: center
+
+    h1
+      margin: 0
+      padding: 0
+      font-weight: 300
+
+  .landing-page-buttons
+    margin-top: 10em
+
+    .btn
+      color: black
+      background: rgba(250, 250, 250, 0.4)
+
+      &:hover
+        color: darken($color-btn, 10%)
+        border-color: darken($color-btn, 10%)
+        background-color: lighten($color-btn, 30%)
+        transition: all 0.4s ease-out
+
+  .features-wrapper
+    margin: 0
+    padding: 5em 0 5em 0
+
+  .features
+    margin: 0 auto
+    text-align: center
+    width: 90%
+
+    .feature
+      width: 30%
+      display: inline-block
+
+      i
+        padding: 0.2em
+        font-size: 4em
+        display: block
+
+      .tagline
+        text-transform: uppercase
+        white-space: nowrap
+
+  .section-x
+    min-height: 20em
+    text-align: justify
+    line-height: 1.8em
+    width: 80%
+    margin: 4em auto
+
+    p
+      margin-top: 0.8em
+      font-size: 1.2em
+
+    .highlight
+      margin-left: -12.5%
+      width: 105%
+      padding: 0 10%
+      text-align: center
+
+@media screen and (min-width: 600px)
+  .feature
+    font-size: 1.5em
+
+  .landing-page
+    .section-x
+      .highlight
+        margin-left: 0
+        width: 100%
+        padding: 0
+
+@media screen and (min-width: 800px)
+  .landing-page
+    .jumbo
+      padding: 6em 0
+
+    h1
+      font-size: 3em
+
+    .features-wrapper
+      width: 100%
+
+      strong
+        font-size: 1.2em
+
+  .landing-page-buttons
+    margin-top: 16em
+
+  .section-x
+    clear: both
+
+    .column
+      width: 48%
+      float: right
+
+      &:first-child
+        float: left
+
+@media screen and (min-width: 1200px)
+  .landing-page
+    .jumbo
+      padding: 16em
+
+    .features
+      width: 60%
+
+@media screen and (max-width: 1500px)
+  .landing-page
+    .jumbo
+      background-image: url(bg1500.jpg)
+
+@media screen and (min-width: 1500px) and (max-width: 2000px)
+  .landing-page
+    .jumbo
+      background-image: url(bg2000.jpg)
+
+@media screen and (min-width: 2000px) and (max-width: 3000px)
+  .landing-page
+    .jumbo
+      background-image: url(bg3000.jpg)
+
+@media screen and (min-width: 4000px)
+  .landing-page
+    .jumbo
+      background-image: url(bg4000.jpg)

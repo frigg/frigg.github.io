@@ -1,0 +1,51 @@
+@import variables
+
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+.clearfix
+  max-height: 0
+  min-width: 80%
+  clear: both
+  float: none !important
+
+.min-600
+  display: none
+
+.max-600
+  display: inline-block
+
+.inverted
+  background-color: $color-inverted-background
+  color: $color-inverted-text
+
+  a
+    color: $color-inverted-text
+
+.btn
+  border: 2px solid $color-btn
+  padding: 0.4em
+  margin: 0.1em
+  font-size: 1.4em
+  text-decoration: none
+  color: $color-btn
+  display: inline-block
+  transition: color 0.4s ease-in-out
+  transition: border-color 0.4s ease-in-out
+  transition: background-color 0.4s ease-in-out
+
+  &:hover
+    color: darken($color-btn, 10%)
+    border-color: darken($color-btn, 10%)
+    background-color: lighten($color-btn, 30%)
+    transition: all 0.4s ease-out
+
+@media screen and (min-width: 600px)
+  .min-600
+    display: inline-block
+
+  .max-600
+    display: none

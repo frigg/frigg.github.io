@@ -10,7 +10,7 @@ title: Badges
 To get a nice build badge in your readme to show everyone that you build is a success, or warn people that it is broken and the master branch might not work at the moment, just add the code below.
 
 #### Markdown
-{% highlight markdown %}
+{% highlight text %}
 [![Build status](https://ci.frigg.io/<owner>/<repo>.svg)](https://ci.frigg.io/<owner>/<repo>/last/)
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ To get a nice build badge in your readme to show everyone that you build is a su
 To get a nice build badge in your readme to show everyone that you build is a success, or warn people that it is broken and the master branch might not work at the moment, just add the code below.
 
 #### Markdown
-{% highlight markdown %}
+{% highlight text %}
 [![Build status](https://ci.frigg.io/<owner>/<repo>/coverage.svg)](https://ci.frigg.io/<owner>/<repo>/last/)
 {% endhighlight %}
 

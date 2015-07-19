@@ -19,7 +19,13 @@ This option can be used to install and setup the build environment. These tasks
 will run before the regular tasks. The intention is to separate external installs
 and dependencies from the code that the build should test. If they fail the build
 will be marked as an error, while failed tasks is marked as failures. The result
-of these tasks will be shown in its own section on Frigg
+of these tasks will be shown in its own section on Frigg.
+
+#### `preview` - optional
+This option activates the preview feature, which deploys a preview of each
+pull-request in a Docker container. It can be used to preview one web application
+per project. It makes it easier to evaluate changes to an web application. Read
+more about it in the [preview documentation][preview].
 
 #### `coverage` - optional
 This option activates coverage reporting for the project. It needs two
@@ -27,7 +33,7 @@ subparameter `path` and `parser`. The `path` option is the path to the
 coverage report file and the `parser` is the type of parser needed to
 parse the report file. Currently available parsers: clover, cobertura
 and python. More information can be found in the
-[coverage reporting documentation](/docs/coverage-reporting/).
+[coverage reporting documentation][coverage].
 
 #### `services` - optional
 Should be defined as a list of services where Frigg can start before
@@ -55,3 +61,7 @@ coverage:
   path: coverage.xml
   parser: python
 {% endhighlight %}
+
+
+[preview]: /docs/preview/
+[coverage]: /docs/coverage-reporting/

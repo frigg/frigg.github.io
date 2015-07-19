@@ -4,7 +4,9 @@ title: Preview
 ---
 
 Preview makes it possible to deploy live versions of your pull-requests.
-It makes it possible to run your application within an docker container.
+It enables you to run your application within an docker container and use
+just as if you deployed it yourself. It makes evaluation of pull-requests
+on web application a charm.
 
 ### Setup
 
@@ -42,3 +44,8 @@ preview:
 ### Allowed Docker containers
 
 * All images with the `frigg/`-prefix
+
+### Restricting access to the deployed preview
+There is no support, yet, for authentication in the Frigg Preview layer.
+Thus, if a preview would contain sensitive information or secret product
+previews then the authentication must be handled by the application itself.

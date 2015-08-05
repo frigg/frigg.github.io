@@ -4,8 +4,7 @@ setup_tasks:
 tasks:
  - rake test
 
-deploy_tasks:
- - jekyll serve -B -H 0.0.0.0 -P 8000
-
-deployment:
+preview:
  image: frigg/frigg-test-base
+ tasks:
+ - no_hup jekyll serve -B -H 0.0.0.0 -P 8000 &

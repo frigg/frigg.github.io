@@ -14,3 +14,7 @@ Frigg is able to detect the following test runners without any configuration.
 * sbt
 * Cargo
 * Jekyll
+* Maven
+* Rake
+* Grunt
+* Gulp

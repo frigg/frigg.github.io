@@ -39,4 +39,3 @@ We ask for write permissions to your repositories. We actually do not want to,
 however there is no way around this. Github does not have a permission scope in
 their API that gives read-only access to repositories. We try our best to keep
 the scope of the permissions we ask for at a minimum.
-
